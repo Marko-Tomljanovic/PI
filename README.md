@@ -4,5 +4,5 @@ Homeworks form the course of software engineering.
 ## Professor
 doc. dr. sc. Nikola Tanković
 
-## faculty
+## Faculty
 Fakultet informatike u Puli
