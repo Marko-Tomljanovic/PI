@@ -7,9 +7,10 @@ body{
   width: 800px;
   background: rgb(41, 98, 105);
   padding: 50px;
+  padding-bottom: 2%;
   text-align: center;
-  margin: auto;
-  margin-top: 2%;
+  margin: auto; 
+  margin-top: 0.5%;
   color: white;
   font-family: 'Century Gothic',sans-serif;
 }
@@ -20,11 +21,10 @@ body{
   margin-bottom: 50%;
   background-image: url("photo1.jpg");
   opacity: 0.65;
-
   background-color: black;
   text-align: center;
   margin: auto;
-  margin-top: 1%;
+  margin-top: 5%;
   color: white;
   font-family: 'Century Gothic',sans-serif;
 }
@@ -44,7 +44,10 @@ body{
   border-radius: 15%;
   width: 200px;
   height: 200px;
+  margin-bottom: -10%;
 }
+
+
 
 
 
