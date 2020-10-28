@@ -1,3 +1,10 @@
+/* 
+Marko Tomljanović
+Zadatak JS-302
+2. (JS-102) Napiši program koji prima broj bodova sa kolegija i ispisuje ocjenu (prema previlniku o
+    ocjenjivanju). Ukoliko je ocjena pozitivna ispisati teskt sa cestitkom i ocjenom.
+*/
+
 let bodovi = prompt("Unesi broj bodova");
 //proba
 //let bodovi=75;

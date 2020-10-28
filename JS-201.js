@@ -1,4 +1,6 @@
-/* 1. (JS-201) Napiši petlju koja ce ispisati u konzolu sljedece
+/* 
+Marko Tomljanović
+1. (JS-201) Napiši petlju koja ce ispisati u konzolu sljedece
 #
 ##
 ###
