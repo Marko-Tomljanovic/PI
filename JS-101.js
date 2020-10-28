@@ -1,4 +1,8 @@
-// 1. (JS-101) Nadopuni kod da ispravno ispisuje.
+/* 
+Marko Tomljanović
+Zadatak JS-302
+1. (JS-101) Nadopuni kod da ispravno ispisuje.
+*/
 
 let a = prompt("Unesi prvi broj");
 let b = prompt("Unesi drugi broj");
@@ -11,7 +15,7 @@ let d = prompt("Unesi četvrti broj");
 //let c = 6;
 //let d = 7;
 //let maks;
-
+ 
 if (a > b) {
     maks=a;
    }else{

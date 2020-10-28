@@ -1,5 +1,6 @@
 /* 
 Marko Tomljanović
+Zadatak JS-201
 1. (JS-201) Napiši petlju koja ce ispisati u konzolu sljedece
 #
 ##

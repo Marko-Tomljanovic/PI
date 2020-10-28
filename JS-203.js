@@ -1,5 +1,6 @@
 /* 
 Marko Tomljanović
+Zadatak JS-203
 3. (JS-203) Napiši program koji ispisuje šahovsko polje koristeci razmak ( " " ) i znak # :
 Napravi program tako da postoji na pocetku definirana varijabla velicina koja oznacava velicinu
 kvadrata.
