@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+  background-size: cover;
+}
+.box{
+  width: 800px;
+  background: rgb(41, 98, 105);
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+  margin-top: 3%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.box1{
+  width: 200px;
+  height: 200px; 
+  margin-left: 2%;
+  margin-top: -23%;
+  }
+  .box2{
+    width: 200px;
+    height: 170px; 
+    margin-left: 70%;
+    margin-top: -27%;
+    }
+.box-img{
+  border-radius: 15%;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(238, 178, 14);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(238, 178, 14);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
