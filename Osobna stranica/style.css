@@ -63,37 +63,27 @@ body{
   font-size: 25px;
 }
 
-
-
 /* za hyperlink */
-
 a:link {
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
   }
-  
   a:visited {
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
   }
-  
   a:hover {
     color: rgb(238, 178, 14);
     background-color: transparent;
     text-decoration: underline;
   }
-  
   a:active {
     color: rgb(238, 178, 14);
     background-color: transparent;
     text-decoration: underline;
   }
-
-
-
-
 
   input {
     width: 100%;
@@ -104,14 +94,12 @@ a:link {
     margin-top: 6px;
     margin-bottom: 16px;
   }
-  
-  /* Style the submit button */
+
   input[type=submit] {
     background-color: #07a30d;
     color: white;
   }
   
-  /* Style the container for inputs */
   .container {
     background-color: #3aa0be83;
     padding: 20px;
@@ -121,8 +109,7 @@ a:link {
     opacity: 0.85;
     border-radius: 3%;
   }
-  
-  /* The message box is shown when the user clicks on the password field */
+
   #message {
     display:none;
     background: #3aa0be83;
@@ -142,7 +129,6 @@ a:link {
     font-size: 18px;
   }
   
-  /* Add a green text color and a checkmark when the requirements are right */
   .valid {
     color: green;
   }
@@ -153,7 +139,6 @@ a:link {
     content: "✔";
   }
   
-  /* Add a red text color and an "x" when the requirements are wrong */
   .invalid {
     color: red;
   }
