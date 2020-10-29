@@ -11,17 +11,17 @@ body{
   text-align: center;
   margin: auto; 
   margin-top: 0.5%;
+  
   color: white;
   font-family: 'Century Gothic',sans-serif;
 }
 .drugi_box{
   width: 800px;
   padding: 50px;
-  padding-bottom: 50%;
+  padding-bottom: 20%;
   margin-bottom: 50%;
   background-image: url("photo1.jpg");
-  opacity: 0.65;
-  background-color: black;
+  /*opacity: 0.65;  */
   text-align: center;
   margin: auto;
   margin-top: 5%;
@@ -49,8 +49,7 @@ body{
 
 
 
-
-
+/* za hyperlink */
 
 a:link {
     color: rgb(255, 255, 255);
@@ -76,3 +75,75 @@ a:link {
     text-decoration: underline;
   }
 
+
+
+
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #07a30d;
+    color: white;
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    background-color: #3aa0be83;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.85;
+    border-radius: 3%;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    background: #3aa0be83;
+    color: #000;
+    position: relative;
+    padding: 5px;
+    
+    margin-bottom: -20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
