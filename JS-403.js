@@ -58,7 +58,7 @@ const provjera=function(s){
         }else{ viticasta2++; 
         }
     }if(obicna1==obicna2 && uglata1==uglata2 && viticasta1==viticasta2){
-        return true;
+        return raspored(lista,s,obicna1,obicna2,uglata1,uglata2,viticasta1,viticasta2);
     }else{
         return false;
     }    
@@ -66,6 +66,22 @@ const provjera=function(s){
 
 
 
+const raspored=function(lista,s,obicna1,obicna2,uglata1,uglata2,viticasta1,viticasta2){
+    for(let i=0;i<s.length;i++){
+        if(lista[i]==obicna1 || lista[i]==uglata1 || lista[i]==viticasta1){
+            for(let j=i+1;i<s.length;j++){
+                if(lista[j]==obicna2 || lista[j]==uglata2 || lista[j]==viticasta2){
+                    lista[i]="*";
+                    lista[j]="*";
+                }
+            }
+        }
+    }
+    return lista;
+}
+
+
+
     console.log(zagrade("[()]()()")); // ! true
  //   console.log(zagrade("{[((()))]}")); // ! true
-    console.log(zagrade("({)}")); // ! false
+   // console.log(zagrade("({)}")); // ! false
