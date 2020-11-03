@@ -1,10 +1,3 @@
-/* 
-Marko Tomljanović
-Zadatak JS-403
-4. (JS-403) Napiši funkciju zagrade koja će provjeriti jesu li zagrade valjano ugnježdene:
-Hint: stog može pomoći :)
-*/
-
 const zagrade = function(s) {       //eliminacijska provjera da li je string paran
     let rez=false;
     if((s.length%2)!=0){

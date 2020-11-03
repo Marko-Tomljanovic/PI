@@ -87,26 +87,26 @@ console.log("## Funkcija ##");
   console.log(zagrade("({)}")); // ! false
 
 
-  //Stack
+  
 
   let stog=(str)=>{
     let stack=[];
-    let open={
+    let otvorene={
         '{':'}',
         '[':']',
         '(':')'
     };
-    let closed={
+    let zatvorene={
         '}':true,
         ']':true,
         ')':true
     }
     for(let i=0;i<str.length;i++){
         let char = str[i];
-        if (open[char]){
+        if (otvorene[char]){
             stack.push(char);
-        }else if(closed[char]){
-            if(open[stack.pop()]!==char){
+        }else if(zatvorene[char]){
+            if(otvorene[stack.pop()]!==char){
                 return false;
             } 
         }
