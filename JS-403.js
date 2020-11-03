@@ -1,6 +1,6 @@
 /* 
 Marko Tomljanović
-Zadatak JS-402
+Zadatak JS-403
 4. (JS-403) Napiši funkciju zagrade koja će provjeriti jesu li zagrade valjano ugnježdene:
 Hint: stog može pomoći :)
 */
