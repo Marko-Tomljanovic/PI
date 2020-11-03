@@ -5,46 +5,17 @@ Zadatak JS-402
 Hint: stog može pomoći :)
 */
 
-const zagrade = function(s) {
+const zagrade = function(s) {       //eliminacijska provjera da li je string paran
     let rez=false;
-    let druga="";
     if((s.length%2)!=0){
         return rez;
     }else{
        return provjera(s);
     }};
-    
-
-// const provjera=function(s){
-//     let druga="";
-//     let lista=[];
-//     for(let i=0;i<s.length;i++){
-//         lista[i]=s.charAt(i);
-//     }
-//     for(let i=0;i<s.length;i++){
-//         if(lista[i]=="("){
-//             druga=")";
-//             for(let j=i+1;j<s.length;j++){
-//                 if(lista[j]==druga){
-//                     lista[i]="*";
-//                     lista[i+1]="*";
-//                 }
-
-//             }
-            
-//         }
-//     }
-    
-    
-
-//     return lista;
-// }
 
 
-
-const provjera=function(s){
+const provjera=function(s){                       //eliminacijska provjera da li svaka zagrada ima par
     let obicna1=0;obicna2=0;uglata1=0;uglata2=0;viticasta1=0;viticasta2=0;
-    let druga="";
     let lista=[];
     for(let i=0;i<s.length;i++){
         lista[i]=s.charAt(i);
@@ -58,30 +29,59 @@ const provjera=function(s){
         }else{ viticasta2++; 
         }
     }if(obicna1==obicna2 && uglata1==uglata2 && viticasta1==viticasta2){
-        return raspored(lista,s,obicna1,obicna2,uglata1,uglata2,viticasta1,viticasta2);
+        return raspored(lista,s);
     }else{
         return false;
     }    
 }
 
-
-
-const raspored=function(lista,s,obicna1,obicna2,uglata1,uglata2,viticasta1,viticasta2){
+//eliminacijska provjera da li za sve tri vrste zagrada da li su korektno matematicki smjestene
+const raspored=function(lista,s){
     for(let i=0;i<s.length;i++){
-        if(lista[i]==obicna1 || lista[i]==uglata1 || lista[i]==viticasta1){
-            for(let j=i+1;i<s.length;j++){
-                if(lista[j]==obicna2 || lista[j]==uglata2 || lista[j]==viticasta2){
-                    lista[i]="*";
-                    lista[j]="*";
+        if(lista[i]=="{"){
+            for(let j=(s.length-1);j>=0;j--){
+                if(lista[j]=="}"){
+                    if((j-i-1)%2!=0){
+                        return false;
+                    }else{
+                        lista[i]="*";
+                        lista[j]="*";
+                   }{break;}
                 }
             }
-        }
-    }
-    return lista;
+        }}   
+    for(let i=0;i<s.length;i++){
+        if(lista[i]=="["){
+            for(let j=(s.length-1);j>=0;j--){
+                if(lista[j]=="]"){
+                    if((j-i-1)%2!=0){
+                        return false;
+                    }else{
+                        lista[i]="*";
+                        lista[j]="*";
+                   }{break;}
+                }
+            }
+        }}
+    for(let i=0;i<s.length;i++){
+            if(lista[i]=="("){
+                for(let j=(s.length-1);j>=0;j--){
+                    if(lista[j]==")"){
+                        if((j-i-1)%2!=0){
+                            return false;
+                        }else{
+                            lista[i]="*";
+                            lista[j]="*";
+                       }{break;}
+                    }        
+                }
+            }}
+return true; 
 }
 
+    
 
-
-    console.log(zagrade("[()]()()")); // ! true
- //   console.log(zagrade("{[((()))]}")); // ! true
-   // console.log(zagrade("({)}")); // ! false
+//console.log(zagrade("{{[()]}()}")); // ! true
+  console.log(zagrade("[[()]]()()")); // ! true
+  console.log(zagrade("{[((()))]}")); // ! true
+  console.log(zagrade("({)}")); // ! false
