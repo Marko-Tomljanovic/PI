@@ -31,10 +31,27 @@ let studenti = [
     }
     ];
 
-    function napredna_pretraga(lista, pojam) {
-        // ... implementirati ovdje :)
+    const provjeri=function(lista, pojam, status){
+        pojam=pojam.toLowerCase();
+        let rez=false;
+        for(let i=0; i<lista.length; i++){           
+            if(pojam==lista[i].ime.toLowerCase() || pojam==lista[i].prezime.toLowerCase() || pojam==lista[i].ime.toLowerCase() + " " + lista[i].prezime.toLowerCase() || status==lista[i].upisan){   
+                        rez=lista[i].upisan;
+        }}
+        return rez;
+    }
+
+
+    function napredna_pretraga(lista, pojam){
+        
+        
         }
+
+
+
         console.assert(napredna_pretraga(studenti, "ma ić"), 0) // ! prvi student
         console.assert(napredna_pretraga(studenti, "ko lić ri"), 3) // ! zadnji student
         console.assert(napredna_pretraga(studenti, "ić za"), 2) // ! treći student
         console.assert(napredna_pretraga(studenti, "ić ko la ri"), 3) // ! zadnji student
+
+
