@@ -12,9 +12,6 @@
 
 
 
-
-
-
 <style>
   @import './../assets/bootstrap.css';
 </style>

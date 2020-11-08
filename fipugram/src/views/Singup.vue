@@ -40,14 +40,6 @@
   </div>
 </div><br><br>
 
-
-
-
-
-
-
-
-
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">I accept and understand the "Software engineering" class</label>
@@ -56,7 +48,6 @@
 </form>
 </div>
 </div>
-   
   </div>
 </template>
 
